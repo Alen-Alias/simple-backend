@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: #000000;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: #0d0d0d;
+            border-radius: 8px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
+            padding: 40px;
+            width: 100%;
+            max-width: 500px;
+            border: 1px solid #333333;
+            text-align: center;
+        }
+
+        h1 {
+            color: #ffffff;
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+
+        .subtitle {
+            color: #808080;
+            margin-bottom: 30px;
+            font-size: 13px;
+        }
+
+        .content {
+            color: #e0e0e0;
+            margin-bottom: 30px;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        button {
+            padding: 12px 24px;
+            background-color: #333333;
+            color: #ffffff;
+            border: 1px solid #505050;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        button:hover {
+            background-color: #404040;
+            border-color: #606060;
+        }
+
+        button:active {
+            background-color: #2a2a2a;
+        }
+
+        a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome</h1>
+        <div class="subtitle">Your application</div>
+        
+        <div class="content">
+            <p>Hello! Welcome to your application. Start exploring.</p>
+        </div>
+
+        <div class="button-group">
+            <button onclick="location.href='/'">Logout</button>
+        </div>
+    </div>
+</body>
+</html>

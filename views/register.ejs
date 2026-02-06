@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: #000000;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: #0d0d0d;
+            border-radius: 8px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
+            padding: 40px;
+            width: 100%;
+            max-width: 400px;
+            border: 1px solid #333333;
+        }
+
+        h1 {
+            text-align: center;
+            color: #ffffff;
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #808080;
+            margin-bottom: 30px;
+            font-size: 13px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #e0e0e0;
+            font-weight: 500;
+            font-size: 13px;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px 14px;
+            border: 1px solid #404040;
+            border-radius: 6px;
+            font-size: 14px;
+            background-color: #1a1a1a;
+            color: #ffffff;
+            transition: all 0.2s ease;
+            font-family: inherit;
+        }
+
+        input::placeholder {
+            color: #606060;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #606060;
+            background-color: #252525;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #333333;
+            color: #ffffff;
+            border: 1px solid #505050;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            margin-top: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        button:hover {
+            background-color: #404040;
+            border-color: #606060;
+        }
+
+        button:active {
+            background-color: #2a2a2a;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Register</h1>
+        <div class="subtitle">Create your account</div>
+        
+        <form action="/register-data" method="post">
+            <div class="form-group">
+                <label for="username">Name</label>
+                <input type="text" id="username" name="username" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter a password" required>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
